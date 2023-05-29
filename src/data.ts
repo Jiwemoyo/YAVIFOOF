@@ -1,0 +1,83 @@
+import {Food} from './app/shared/models/Food'
+import { Tag } from './app/shared/models/tag'
+
+export const sample_foods: Food[] = [
+  {
+    id:'1',
+    name: 'Encebollado',
+    cookTime: '5-10',
+    price: 2.50,
+    favorite: true,
+    origins: ['Pescado','Cebollar'],
+    stars: 4.5,
+    imageUrl: 'assets/food-1.jpg',
+    tags: ['Rapido', 'Costa', 'Almuerzo','Todas'],
+  },
+  {
+    id:'2',
+    name: 'Albondigas',
+    price: 20,
+    cookTime: '20-30',
+    favorite: true,
+    origins: ['carne res', 'especias', 'pasta'],
+    stars: 4.7,
+    imageUrl: 'assets/food-2.jpg',
+    tags: ['gourmet', 'Almuerzo','Todas'],
+  },
+  {
+    id:'3',
+    name: 'Fritada',
+    price: 5,
+    cookTime: '10-15',
+    favorite: false,
+    origins: ['Cerdo','mote','maduro'],
+    stars: 3.5,
+    imageUrl: 'assets/food-3.jpg',
+    tags: ['Rapido', 'Sierra','Todas'],
+  },
+  {
+    id:'4',
+    name: 'Salchipapa',
+    price: 2,
+    cookTime: '15-20',
+    favorite: true,
+    origins: ['papas','ketchup','mayonesa'],
+    stars: 3.3,
+    imageUrl: 'assets/food-4.jpg',
+    tags: ['Rapido', 'Frito','Todas'],
+  },
+  {
+    id:'5',
+    name: 'Caldo de mariscos',
+    price: 11,
+    cookTime: '5-10',
+    favorite: false,
+    origins: ['camaron','pescado','calamar'],
+    stars: 3.0,
+    imageUrl: 'assets/food-5.jpg',
+    tags: ['gourmet', 'Caldo','Todas'],
+  },
+  {
+    id:'6',
+    name: 'Ceviche de camaron',
+    price: 9,
+    cookTime: '40-50',
+    favorite: false,
+    origins: ['producto a base de camaron'],
+    stars: 4.0,
+    imageUrl: 'assets/food-6.jpg',
+    tags: ['Rapido', 'Costa', 'Almuerzo','Todas'],
+  },
+]
+
+export const sample_tags:Tag[] = [
+  { name: 'Todas', count: 6 },
+  { name: 'Rapido', count: 4 },
+  { name: 'Costa', count: 2 },
+  { name: 'Almuerzo', count: 3 },
+  { name: 'gourmet', count: 2 },
+  { name: 'Sierra', count: 1 },
+  { name: 'Frito', count: 1 },
+  { name: 'Caldo', count: 1 },
+]
+
